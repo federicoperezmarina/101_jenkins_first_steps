@@ -6,11 +6,12 @@ This repository is about how to use jenkins
 2. [Build the image from Dockerfile](#build-the-image-from-dockerfile)
 3. [Run the image](#run-the-image)
 4. [Execute the image](#execute-the-image)
+5. [Start Jenkins Installation](#start-jenkins-installation)
 
 ## Dockerfile
 This is the Dockerfile that we want to use to build the image of jenkins.
 ```sh
-FROM jenkins/jenkins:2.332.1-jdk11
+FROM jenkins/jenkins:2.332.3-jdk11
 USER root
 RUN apt-get update && apt-get install -y lsb-release
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
@@ -27,7 +28,7 @@ RUN jenkins-plugin-cli --plugins "blueocean:1.25.3 docker-workflow:1.28"
 ## Build the image from Dockerfile
 In the second step we show how to build the image having the dockerfile
 ```sh
-docker build -t myjenkins-blueocean:2.332.1-1 .
+docker build -t myjenkins-blueocean:2.332.3 .
 ```
 ## Run the image
 In the third step we are going to run the the docker build image
@@ -44,11 +45,18 @@ docker run \
   --publish 50000:50000 \
   --volume jenkins-data:/var/jenkins_home \
   --volume jenkins-docker-certs:/certs/client:ro \
-  myjenkins-blueocean:2.332.1-1 
+  myjenkins-blueocean:2.332.3 
 ```
 
 ## Execute the image
 In the fourth step we want to show how to enter in the container with a simple docker command
 ```sh
 docker exec -it jenkins-blueocean bash
+```
+## Start Jenkins Installation
+To start the installation we should go to:
+```sh
+http://localhost:8080
+user: admin
+password: admin
 ```
