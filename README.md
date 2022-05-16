@@ -57,6 +57,19 @@ docker exec -it jenkins-blueocean bash
 To start the installation we should go to:
 ```sh
 http://localhost:8080
-user: admin
-password: admin
 ```
+To get the initial password do
+```sh
+docker ps
+docker logs <container_id>
+or
+cat /var/jenkins_home/secrets/initialAdminPassword
+```
+Now you are able to install the most useful plugins and create the first admin user
+```sh
+user:admin
+pass:admin
+repass:admin
+administrator
+your_email@domain.com
+
