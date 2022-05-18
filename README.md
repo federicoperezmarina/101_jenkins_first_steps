@@ -64,10 +64,13 @@ In the browser we will see this image the first time.
 
 To get the initial password do
 ```sh
-docker ps
-docker logs <container_id>
+$ docker ps
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS          PORTS                                              NAMES
+c7b0e756ca7f   myjenkins-blueocean:2.332.3   "/sbin/tini -- /usr/…"   16 minutes ago   Up 16 minutes   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   jenkins-blueocean
+$ docker logs <container_id>
+$ docker logs c7b0e756ca7f
 or
-cat /var/jenkins_home/secrets/initialAdminPassword
+$ cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 Now you are able to install the most useful plugins and create the first admin user
 ```sh
