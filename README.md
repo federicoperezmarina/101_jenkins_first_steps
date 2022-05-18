@@ -72,6 +72,10 @@ $ docker logs c7b0e756ca7f
 or
 $ cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+
+In this step we see something like that:
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/wellcome_jenkins.png" width="400px"/></p>
+
 Now you are able to install the most useful plugins and create the first admin user
 ```sh
 user:admin
