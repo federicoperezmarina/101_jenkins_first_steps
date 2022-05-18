@@ -60,7 +60,7 @@ http://localhost:8080
 ```
 
 In the browser we will see this image the first time.
-![Unlock Jenkins](https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/unlock_jenkins.png | width=100)
+<img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/unlock_jenkins.png" width="100px"/>
 
 To get the initial password do
 ```sh
