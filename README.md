@@ -87,3 +87,5 @@ repass:admin
 administrator
 your_email@domain.com
 
+If we are able to see this login, we have done a good job!
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/login_jenkins.png" width="400px"/></p>
