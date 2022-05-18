@@ -79,7 +79,7 @@ In this step we see something like that:
 Now we are able to create an administrator for the jenkins:
 <p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/admin_jenkins.png" width="400px"/></p>
 
-Now you are able to install the most useful plugins and create the first admin user
+We will complete the info for the jenkins administrator and restart the jenkins.
 ```sh
 user:admin
 pass:admin
