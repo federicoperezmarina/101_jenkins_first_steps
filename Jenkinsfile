@@ -6,6 +6,11 @@ pipeline {
                 sh 'echo "Prepare Jenkins Step"'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'echo "Tests Jenkins Step"'
+            }
+        }        
         stage('Deploy') {
             steps {
                 sh 'echo "Deploy Jenkins Step"'
