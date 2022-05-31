@@ -7,6 +7,7 @@ This repository is about how to use jenkins
 3. [Run the image](#run-the-image)
 4. [Execute the image](#execute-the-image)
 5. [Start Jenkins Installation](#start-jenkins-installation)
+6. [Create a new task](#create-a-new-task)
 
 ## Dockerfile
 This is the Dockerfile that we want to use to build the image of jenkins.
@@ -90,3 +91,7 @@ your_email@domain.com
 
 If we are able to see this login, we have done a good job!
 <p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/login_jenkins.png" width="400px"/></p>
+
+## Create a new task
+Now we are going to create a new task/pipeline:
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/new_task_jenkins.png" width="400px"/></p>
