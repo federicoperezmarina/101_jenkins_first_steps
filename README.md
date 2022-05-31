@@ -93,5 +93,23 @@ If we are able to see this login, we have done a good job!
 <p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/login_jenkins.png" width="400px"/></p>
 
 ## Create a new task
-Now we are going to create a new task/pipeline:
+Step 1: we are going to create a new task (pipeline):
 <p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/new_task_jenkins.png" width="400px"/></p>
+
+Step 2: we have to write the name of the task 'my-pipeline' and select 'Multibranch pipeline'
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/new_task_2_jenkins.png" width="400px"/></p>
+
+Step 3: we have to introduce the name 'my-pipeline', add the github repository 'https://github.com/federicoperezmarina/101_jenkins_first_steps' and save it.
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/new_task_3_jenkins.png" width="400px"/></p>
+
+Step 4: we will list all the pipelines going to the next url 'http://localhost:8080/'
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/pipelines_jenkins.png" width="400px"/></p>
+
+Step 6: we select 'my-pipeline'
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/my-pipeline_jenkins.png" width="400px"/></p>
+
+Step 7: we can see now all the stages in the pipeline 'my-pipeline'
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/stage_view_jenkins.png" width="400px"/></p>
+
+Step 8: we click into console output to see how the pipelines has been executed
+<p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/console_output_jenkins.png" width="400px"/></p>
