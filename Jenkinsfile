@@ -1,20 +1,18 @@
 pipeline {
     agent any
     stages {
-        stage('Prepare') {
+        stage('CI pipeline') {
             steps {
-                sh 'echo "Prepare Jenkins Step"'
+                sh 'echo "Build Step"'
+                sh 'echo "Security Step"'
+                sh 'echo "Test Step"'
+                sh 'echo "QA Step"'
             }
-        }
-        stage('Test') {
+        }     
+        stage('CD pipeline') {
             steps {
-                sh 'echo "Tests Jenkins Step"'
-            }
-        }        
-        stage('Deploy') {
-            steps {
-                sh 'echo "Deploy Jenkins Step"'
-                sh 'ls -lha'
+                sh 'echo "Release Step"'
+                sh 'echo "Deploy Step"'
             }
         }        
     }
