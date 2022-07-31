@@ -101,3 +101,4 @@ Step 7: we can see now all the stages in the pipeline 'my-pipeline'
 
 Step 8: we click into console output to see how the pipelines has been executed
 <p><img src="https://github.com/federicoperezmarina/101_jenkins_first_steps/blob/main/img/console_output_jenkins.png"/></p>
+
